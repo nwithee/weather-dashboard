@@ -15,15 +15,18 @@
     <section id ="content" class = "row">
         <!-- Code for city search and search history-->
         <div id = "cityColumn" class = "col-md-3">
-            <h2>Search for a City</h2>
-            <input type = text id = "city" placeholder="city">
-            <button id ="search">Search</button>
+            <form id ="citySearchForm">
+                <h2>Search for a City</h2>
+                <input type = text id = "city" placeholder="city">
+                <button id ="search">Search</button>
+            </form>
         </div>
 
         <!-- Code for displaying search results-->
         <div id = "results" class = "col-md-9">
-            <div id = cityForecast>
-            
+            <div id = cityForecast class = "border-bottom rounded">
+                <h3 id = todayCityForecast></h3>
+                <div id = "currentWeather" class = "list-group"></div>
             </div>
             <div id = fiveDay>
                 <h3>5 Day Forecast</h3>
