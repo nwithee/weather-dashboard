@@ -10,7 +10,7 @@ A website for checking the weather in any city
 https://nwithee.github.io/weather-dashboard/
 
 ## Screenshot
-![App Screenshot](https://github.com/nwithee/work-scheduler/blob/main/assets/images/screenshot.png)
+![App Screenshot](https://github.com/nwithee/weather-dashboard/blob/main/assets/images/Screen_Shot.png)
 
 ## Contribution
 Made by [Nevin Withee]
