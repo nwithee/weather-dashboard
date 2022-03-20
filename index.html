@@ -12,30 +12,37 @@
         <h1>Weather Dashboard</h1>
     </header>
     
-    <section id ="content" class = "row">
-        <!-- Code for city search and search history-->
-        <div id = "cityColumn" class = "col-md-3">
-            <form id ="citySearchForm">
-                <h2>Search for a City</h2>
-                <input type = text id = "city" placeholder="city">
-                <button id ="search">Search</button>
-            </form>
-        </div>
+    <main class = "container-fluid">
+        <section id ="content" class = "row">
+            <!-- Code for city search and search history-->
+            <div id = "cityColumn" class = "col-12 col-md-3">
+                <form id ="citySearchForm" class ="border">
+                    <h3>Search for a City</h3>
+                    <input type = text id = "city" placeholder="city" class = "form-input">
+                    <button id ="search" class = "btn btn-primary" type ="submit">Search</button>
+                </form>
+            <!--  Code to display previously searched cities-->
+                <div id = "oldSearch" class = "border"></div>
+            </div>
 
-        <!-- Code for displaying search results-->
-        <div id = "results" class = "col-md-9">
-            <div id = cityForecast class = "border-bottom rounded">
-                <h3 id = todayCityForecast></h3>
-                <div id = "currentWeather" class = "list-group"></div>
+            <!-- Code for displaying search results-->
+            <div id = "results" class = "col-12 col-md-9">
+                <div id = cityForecast class = "row border-bottom rounded">
+                    <h3 id = todayCityForecast></h3>
+                    <div id = "currentWeather" class = "list-group"></div>
+                </div>
+                <div id = fiveDay class = "row border">
+                    <h3 id = "forecast" class = "col-12">5 Day Forecast</h3>
+                    <div id = "fiveDayBlocks" class = "d-flex"></div>
+                </div>
             </div>
-            <div id = fiveDay>
-                <h3>5 Day Forecast</h3>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <script src="./assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
