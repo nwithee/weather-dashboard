@@ -13,26 +13,28 @@
     </header>
     
     <main class = "container-fluid">
-        <section id ="content" class = "row">
+        <section class = "row">
             <!-- Code for city search and search history-->
-            <div id = "cityColumn" class = "col-12 col-md-3">
-                <form id ="citySearchForm" class ="border">
+            <div id = "cityColumn" class = "col-md-3 bg-light">
+                <form id ="citySearchForm" class = "form-inline">
                     <h3>Search for a City</h3>
-                    <input type = text id = "city" placeholder="city" class = "form-input">
-                    <button id ="search" class = "btn btn-primary" type ="submit">Search</button>
+                    <input type = text id = "city" placeholder="city" class = "form-control form-group mb-2">
+                    <button id ="search" class = "btn btn-primary mb-2" type ="submit">Search</button>
                 </form>
             <!--  Code to display previously searched cities-->
-                <div id = "oldSearch" class = "border"></div>
+                <div id = "oldSearch"></div>
             </div>
 
             <!-- Code for displaying search results-->
-            <div id = "results" class = "col-12 col-md-9">
-                <div id = cityForecast class = "row border-bottom rounded">
-                    <h3 id = todayCityForecast></h3>
-                    <div id = "currentWeather" class = "list-group"></div>
+            <div id = "results" class = "col-md-9">
+                <div id = "todaysResults" class = "row">
+                    <div>
+                        <h3 id = "todayCityForecast" class = "col-12"></h3>
+                        <div id = "currentWeather" class = "list-group"></div>
+                    </div>
                 </div>
-                <div id = fiveDay class = "row border">
-                    <h3 id = "forecast" class = "col-12">5 Day Forecast</h3>
+                <div class = "row">
+                    <h3 id = "forecast" class = "col-12"></h3>
                     <div id = "fiveDayBlocks" class = "d-flex"></div>
                 </div>
             </div>
